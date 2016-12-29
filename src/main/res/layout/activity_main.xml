@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhousl.sketchboard.view.PanelView
+        android:id="@+id/draw_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_gravity="bottom"
+        android:id="@+id/config_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            style="@style/button_style"
+            android:background="@color/colorPrimary"
+            android:text="StrokeColor"/>
+        <Button
+            style="@style/button_style"
+            android:background="@color/colorAccent"
+            android:text="StrokeWidth"/>
+        <Button
+            android:id="@+id/cicle"
+            style="@style/button_style"
+            android:text="circle"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+</FrameLayout>
