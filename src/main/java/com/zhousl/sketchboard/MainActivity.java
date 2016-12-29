@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.zhousl.sketchboard.shape.RoundRectShape;
+import com.zhousl.sketchboard.shape.PolygonShape;
 import com.zhousl.sketchboard.view.PanelView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.cicle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                panelView.setShape(new RoundRectShape(panelView));
+                panelView.setShape(new PolygonShape(panelView));
             }
         });
     }
