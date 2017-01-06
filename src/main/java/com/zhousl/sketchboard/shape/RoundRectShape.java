@@ -13,6 +13,7 @@ import com.zhousl.sketchboard.view.PanelView;
 public class RoundRectShape extends ShapeImpl {
     public RoundRectShape(PanelView view) {
         super(view);
+        resetPaint();
     }
 
     private float rx=5;

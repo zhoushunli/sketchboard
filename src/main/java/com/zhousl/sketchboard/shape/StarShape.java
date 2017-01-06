@@ -10,9 +10,9 @@ import com.zhousl.sketchboard.view.PanelView;
  * Created by Administrator on 2016/12/29.
  */
 
-public class PolygonShape extends ShapeImpl {
+public class StarShape extends ShapeImpl {
 
-    public PolygonShape(PanelView view) {
+    public StarShape(PanelView view) {
         super(view);
         resetPaint();
     }

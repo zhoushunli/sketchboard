@@ -3,7 +3,6 @@ package com.zhousl.sketchboard.shape;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.view.View;
@@ -47,8 +46,6 @@ public abstract class ShapeImpl implements Shape,OnTouchEvent{
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(DEFAULT_STROKE_WIDTH);
         mPaint.setColor(DEFAULT_STROKE_COLOR);
-        mPaint.setStrokeJoin(Paint.Join.ROUND);
-        mPaint.setPathEffect(new CornerPathEffect(1000));
     }
 
     private void setCacheCanvas(Canvas canvas,Bitmap buffer){
@@ -59,5 +56,17 @@ public abstract class ShapeImpl implements Shape,OnTouchEvent{
 
     protected void invalidate(){
         mView.invalidate();
+    }
+    protected void resetPaint(){
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(DEFAULT_STROKE_WIDTH);
+        mPaint.setColor(DEFAULT_STROKE_COLOR);
+        mPaint.setStrokeJoin(Paint.Join.MITER);
+        mPaint.setPathEffect(null);
+    }
+
+    @Override
+    public void erase() {
+
     }
 }

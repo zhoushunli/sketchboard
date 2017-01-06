@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/paint"
+        android:title="画笔"></item>
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/line_shape"
+            android:title="自由线" />
+        <item
+            android:id="@+id/oval_shape"
+            android:title="椭圆" />
+        <item
+            android:id="@+id/polygon_shape"
+            android:title="多边形" />
+        <item
+            android:id="@+id/rect_shape"
+            android:title="矩形" />
+        <item
+            android:id="@+id/roundrec_shape"
+            android:title="圆角矩形" />
+        <item
+            android:id="@+id/star_shape"
+            android:title="星形" />
+        <item
+            android:id="@+id/circle_shape"
+            android:title="圆形" />
+    </group>
+</menu>

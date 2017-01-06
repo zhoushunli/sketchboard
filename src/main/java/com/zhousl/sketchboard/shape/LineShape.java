@@ -1,5 +1,7 @@
 package com.zhousl.sketchboard.shape;
 
+import android.graphics.CornerPathEffect;
+import android.graphics.Paint;
 import android.view.MotionEvent;
 
 import com.zhousl.sketchboard.view.PanelView;
@@ -12,6 +14,8 @@ public class LineShape extends ShapeImpl {
 
     public LineShape(PanelView view) {
         super(view);
+        mPaint.setStrokeJoin(Paint.Join.ROUND);
+        mPaint.setPathEffect(new CornerPathEffect(1000));
     }
 
     private float preX;

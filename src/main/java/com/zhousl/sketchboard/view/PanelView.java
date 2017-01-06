@@ -51,6 +51,8 @@ public class PanelView extends View {
     public void setShape(ShapeImpl shape){
         if (shape==null)
             return;
+        if (mShape!=null)
+            mShape=null;
         mShape=shape;
     }
 

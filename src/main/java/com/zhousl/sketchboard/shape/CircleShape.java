@@ -1,5 +1,7 @@
 package com.zhousl.sketchboard.shape;
 
+import android.graphics.CornerPathEffect;
+import android.graphics.Paint;
 import android.graphics.Path;
 import android.view.MotionEvent;
 
@@ -13,6 +15,8 @@ public class CircleShape extends ShapeImpl{
 
     public CircleShape(PanelView view) {
         super(view);
+        mPaint.setStrokeJoin(Paint.Join.ROUND);
+        mPaint.setPathEffect(new CornerPathEffect(100));
     }
 
     private float preX;

@@ -8,4 +8,5 @@ import android.graphics.Canvas;
 
 public interface Shape {
     void draw(Canvas canvas);
+    void erase();
 }

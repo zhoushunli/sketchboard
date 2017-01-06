@@ -7,28 +7,12 @@
         android:id="@+id/draw_panel"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <LinearLayout
-        android:background="#fff"
-        android:layout_gravity="bottom"
-        android:id="@+id/config_panel"
-        android:layout_width="match_parent"
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="horizontal">
-        <Button
-            style="@style/button_style"
-            android:background="@color/colorPrimary"
-            android:text="StrokeColor"/>
-        <Button
-            style="@style/button_style"
-            android:background="@color/colorAccent"
-            android:text="StrokeWidth"/>
-        <Button
-            android:id="@+id/cicle"
-            style="@style/button_style"
-            android:text="circle"
-            android:background="@color/colorPrimaryDark" />
-
-    </LinearLayout>
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:id="@+id/floating_button"
+        android:src="@mipmap/brushes"
+        android:layout_marginBottom="10dp"/>
 </FrameLayout>

@@ -13,6 +13,7 @@ import com.zhousl.sketchboard.view.PanelView;
 public class RectShape extends ShapeImpl {
     public RectShape(PanelView view) {
         super(view);
+        resetPaint();
     }
 
     private float preX;
