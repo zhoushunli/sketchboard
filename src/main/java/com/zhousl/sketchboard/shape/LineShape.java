@@ -45,4 +45,8 @@ public class LineShape extends ShapeImpl {
         }
         return true;
     }
+
+    public static class Builder{
+
+    }
 }

@@ -7,12 +7,23 @@
         android:id="@+id/draw_panel"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
-        android:id="@+id/floating_button"
+        android:src="@mipmap/edit_icon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
         android:src="@mipmap/brushes"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginLeft="10dp" />
+
 </FrameLayout>

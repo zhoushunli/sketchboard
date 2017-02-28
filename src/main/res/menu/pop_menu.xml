@@ -25,5 +25,11 @@
         <item
             android:id="@+id/circle_shape"
             android:title="圆形" />
+        <item
+            android:id="@+id/straight_line"
+            android:title="直线" />
+        <item
+            android:id="@+id/poly_line"
+            android:title="多段线" />
     </group>
 </menu>

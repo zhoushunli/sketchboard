@@ -4,16 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <FrameLayout
+    <com.zhousl.sketchboard.view.PanelView
+        android:id="@+id/draw_panel"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/draw_panel"
-        android:layout_weight="9"></FrameLayout>
+        android:layout_weight="9" />
 
     <LinearLayout
+        android:id="@+id/config_panel"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:id="@+id/config_panel"
-        android:orientation="vertical"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/config_list"
+            android:numColumns="2"></GridView>
+    </LinearLayout>
 </LinearLayout>

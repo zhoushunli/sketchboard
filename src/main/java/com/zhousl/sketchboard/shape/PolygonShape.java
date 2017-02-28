@@ -22,7 +22,7 @@ public class PolygonShape extends ShapeImpl {
     private int edgeCount=8;
     private PointF mCenter;
     private float mAngle= (float) (2*Math.PI/edgeCount);
-    private float mStartAngle=mAngle/2;
+    private float mStartAngle=0;
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -69,5 +69,9 @@ public class PolygonShape extends ShapeImpl {
 
     public int getEdgeCount() {
         return edgeCount;
+    }
+
+    public void setStartAngle(float startAngle) {
+        this.mStartAngle = startAngle;
     }
 }

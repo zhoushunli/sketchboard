@@ -66,7 +66,12 @@ public abstract class ShapeImpl implements Shape,OnTouchEvent{
     }
 
     @Override
-    public void erase() {
+    public void erase(Shape shape) {
+
+    }
+
+    @Override
+    public void edit(Shape shape) {
 
     }
 }
